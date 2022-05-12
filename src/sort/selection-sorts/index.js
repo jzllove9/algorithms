@@ -11,4 +11,4 @@ export default (randomArr) => {
   }
 
   return _arr;
-}
+};

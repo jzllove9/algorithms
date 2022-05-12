@@ -1,7 +1,5 @@
-import DoublyLinkedListNode from './node.js';
+import { expect } from 'chai';
 import DoublyLinkedList from './index.js';
-import { expect } from 'chai'
-
 
 describe('#测试双链表类', () => {
   it('unshift', () => {
@@ -9,7 +7,7 @@ describe('#测试双链表类', () => {
     expect(linkedList.toString()).eql('');
     linkedList.unshift(1).unshift(2).unshift(3);
     expect(linkedList.toString()).eql('3,2,1');
-  })
+  });
 
   it('shift', () => {
     const list1 = new DoublyLinkedList();
@@ -30,7 +28,7 @@ describe('#测试双链表类', () => {
     expect(node.next).null;
     expect(node.prev).null;
     expect(node.value).eql(1);
-  })
+  });
 
   it('push', () => {
     const linkedList = new DoublyLinkedList();
@@ -44,7 +42,7 @@ describe('#测试双链表类', () => {
     expect(linkedList.head.next.value).eql(2);
     expect(linkedList.tail.prev.value).eql(1);
     expect(linkedList.toString()).eql('1,2');
-  })
+  });
 
   it('pop', () => {
     const linkedList = new DoublyLinkedList();
@@ -78,7 +76,7 @@ describe('#测试双链表类', () => {
     expect(linkedList.toString()).eql('');
     expect(linkedList.head).null;
     expect(linkedList.tail).null;
-  })
+  });
 
   it('reverse', () => {
     const linkedList = new DoublyLinkedList();
@@ -127,5 +125,5 @@ describe('#测试双链表类', () => {
     expect(linkedList.tail.prev.value).eql(3);
     expect(linkedList.tail.prev.prev.value).eql(2);
     expect(linkedList.tail.prev.prev.prev.value).eql(1);
-  })
-})
+  });
+});

@@ -1,5 +1,5 @@
+import { expect } from 'chai';
 import SinglyLinkedList from './index.js';
-import { expect } from 'chai'
 
 describe('#测试单链表类', () => {
   it('push', () => {
@@ -107,7 +107,7 @@ describe('#测试单链表类', () => {
     expect(linkedList.tail.value).eql(3);
 
     const linkedList2 = new SinglyLinkedList();
-    linkedList2.push(1)
+    linkedList2.push(1);
 
     expect(linkedList2.toString()).eql('1');
     expect(linkedList2.head.value).eql(1);
@@ -119,5 +119,3 @@ describe('#测试单链表类', () => {
     expect(linkedList2.tail.value).eql(1);
   });
 });
-
-

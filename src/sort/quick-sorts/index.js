@@ -16,7 +16,6 @@ const quickSort = (randomArr) => {
     }
   }
   return quickSort(left).concat(center).concat(quickSort(right));
-
-}
+};
 
 export default quickSort;

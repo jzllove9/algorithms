@@ -26,4 +26,4 @@ describe('#二叉树平衡判断测试', () => {
 
     expect(isBalanced(tree)).eql(false);
   });
-})
+});

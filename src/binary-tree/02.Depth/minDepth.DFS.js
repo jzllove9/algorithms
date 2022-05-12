@@ -1,4 +1,3 @@
-
 const DFS = (root, min = Infinity) => {
   if (!root) return 0;
   if (!root.left && !root.right) return 1;
@@ -11,6 +10,6 @@ const DFS = (root, min = Infinity) => {
   }
 
   return min + 1;
-}
+};
 
 export default DFS;

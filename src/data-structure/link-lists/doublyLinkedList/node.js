@@ -1,4 +1,3 @@
-
 export default class DoublyLinkedListNode {
   constructor(value, prev = null, next = null) {
     this.value = value;
@@ -7,6 +6,6 @@ export default class DoublyLinkedListNode {
   }
 
   toString() {
-    return this.value + '';
+    return `${this.value}`;
   }
 }

@@ -1,4 +1,3 @@
-
 const invert = (root) => {
   if (!root) return null;
   if (!root.left && !root.right) return root;
@@ -6,6 +5,6 @@ const invert = (root) => {
   root.right = invert(root.right);
   [root.left, root.right] = [root.right, root.left];
   return root;
-}
+};
 
 export default invert;

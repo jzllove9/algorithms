@@ -1,12 +1,12 @@
+import { expect } from 'chai';
 import SinglyLinkedListNode from './node.js';
-import { expect } from 'chai'
 
 describe('#测试单链表node类', () => {
   it('测试添加单一值', () => {
     const linkedList = new SinglyLinkedListNode(1);
     expect(linkedList.value).to.eql(1);
     expect(linkedList.next).to.be.null;
-  })
+  });
 
   it('连接两个节点', () => {
     const node1 = new SinglyLinkedListNode(1);

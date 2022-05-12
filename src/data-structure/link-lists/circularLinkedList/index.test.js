@@ -1,7 +1,5 @@
+import { expect } from 'chai';
 import CircularLinkedList from './index.js';
-import CircularLinkedListNode from './node.js';
-import { expect } from 'chai'
-
 
 describe('#测试环链表类', () => {
   it('unshift', () => {
@@ -22,8 +20,7 @@ describe('#测试环链表类', () => {
     expect(linkedList.tail.next).eql(linkedList.head);
     expect(linkedList.head.prev).eql(linkedList.tail);
     expect(linkedList.toString()).eql('3,2,1');
-  })
-
+  });
 
   it('shift', () => {
     const linkedList = new CircularLinkedList();
@@ -51,7 +48,6 @@ describe('#测试环链表类', () => {
     expect(linkedList.head).null;
     expect(linkedList.tail).null;
   });
-
 
   it('push', () => {
     const linkedList = new CircularLinkedList();
@@ -113,7 +109,6 @@ describe('#测试环链表类', () => {
     expect(linkedList.tail).null;
   });
 
-
   it('reverse', () => {
     const linkedList = new CircularLinkedList();
 
@@ -160,5 +155,4 @@ describe('#测试环链表类', () => {
     expect(linkedList.tail.prev.prev.value).eql(2);
     expect(linkedList.tail.prev.prev.prev.value).eql(1);
   });
-})
-
+});

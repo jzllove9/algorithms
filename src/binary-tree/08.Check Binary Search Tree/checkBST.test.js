@@ -25,4 +25,4 @@ describe('#二叉搜索树测试', () => {
 
     expect(checkBST(tree)).eql(false);
   });
-})
+});

@@ -1,4 +1,4 @@
-import { expect } from 'chai'
+import { expect } from 'chai';
 
 import bubbleSort from './bubble-sorts/index.js';
 import selectionSort from './selection-sorts/index.js';
@@ -9,13 +9,13 @@ import shellSort from './shell-sorts/index.js';
 import { heapSorts } from './heap-sorts/index.js';
 
 const sorters = {
-  '冒泡排序': bubbleSort,
-  '选择排序': selectionSort,
-  '插入排序': insetSort,
-  '希尔排序': shellSort,
-  '快速排序': quickSort,
-  '归并排序': mergeSort,
-  '堆排序': heapSorts,
+  冒泡排序: bubbleSort,
+  选择排序: selectionSort,
+  插入排序: insetSort,
+  希尔排序: shellSort,
+  快速排序: quickSort,
+  归并排序: mergeSort,
+  堆排序: heapSorts,
 };
 
 const sortedArr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20];
@@ -43,4 +43,4 @@ describe('#排序测试：', () => {
       expect(randomArr).eql(befortSortArr);
     });
   });
-})
+});

@@ -32,7 +32,7 @@ describe('#恢复二叉树', () => {
     expect(tree.right.right.value).eql(20);
     expect(tree.right.right.left.value).eql(15);
     expect(tree.right.right.right.value).eql(7);
-  })
+  });
 
   it('后序+中序恢复', () => {
     let tree = constructPostIn(postorder, inorder);
@@ -50,5 +50,5 @@ describe('#恢复二叉树', () => {
     expect(tree.right.right.value).eql(20);
     expect(tree.right.right.left.value).eql(15);
     expect(tree.right.right.right.value).eql(7);
-  })
+  });
 });

@@ -4,9 +4,8 @@ const symmerticTree = (root, right = Infinity) => {
   if (right === Infinity) {
     if (root.right && root.left) {
       return symmerticTree(root.left, root.right);
-    } else {
-      return !root.right && !root.left;
     }
+    return !root.right && !root.left;
   }
   if (!right) return false;
 
@@ -14,6 +13,6 @@ const symmerticTree = (root, right = Infinity) => {
   const checkRight = symmerticTree(root.right, right.left);
   const checkEqual = root.value === right.value;
   return checkEqual && checkLeft && checkRight;
-}
+};
 
 export default symmerticTree;

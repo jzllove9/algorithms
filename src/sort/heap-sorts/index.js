@@ -1,18 +1,3 @@
-const heapSorts = (randomArr) => {
-  if (!randomArr.length) return [];
-  if (randomArr.length < 2) return randomArr;
-  const a = [...randomArr];
-  const heap = new MinHeap();
-  randomArr.forEach(item => {
-    heap.add(item);
-  })
-  const _res = [];
-  while (heap.heapContainer.length) {
-    _res.push(heap.poll());
-  }
-  return _res;
-}
-
 class MinHeap {
   constructor() {
     this.heapContainer = [];
@@ -27,20 +12,19 @@ class MinHeap {
     let currentIndex = customIndex || this.heapContainer.length - 1;
     let parentIndex = Math.floor((currentIndex - 1) / 2);
     while (
-      parentIndex >= 0 &&
-      this.heapContainer[currentIndex] < this.heapContainer[parentIndex]
+      parentIndex >= 0
+      && this.heapContainer[currentIndex] < this.heapContainer[parentIndex]
     ) {
       [
         this.heapContainer[currentIndex],
-        this.heapContainer[parentIndex]
+        this.heapContainer[parentIndex],
       ] = [
-          this.heapContainer[parentIndex],
-          this.heapContainer[currentIndex]
-        ]
+        this.heapContainer[parentIndex],
+        this.heapContainer[currentIndex],
+      ];
       currentIndex = parentIndex;
       parentIndex = Math.floor((currentIndex - 1) / 2);
     }
-
   }
 
   poll() {
@@ -67,7 +51,7 @@ class MinHeap {
       let nextIndex = currentIndex * 2 + 1;
       if (this.hasRight(currentIndex)) {
         if (this.heapContainer[nextIndex] > this.heapContainer[nextIndex + 1]) {
-          nextIndex = nextIndex + 1;
+          nextIndex += 1;
         }
       }
 
@@ -75,15 +59,29 @@ class MinHeap {
 
       [
         this.heapContainer[currentIndex],
-        this.heapContainer[nextIndex]
+        this.heapContainer[nextIndex],
       ] = [
-          this.heapContainer[nextIndex],
-          this.heapContainer[currentIndex]
-        ];
+        this.heapContainer[nextIndex],
+        this.heapContainer[currentIndex],
+      ];
       currentIndex = nextIndex;
     }
   }
 }
+
+const heapSorts = (randomArr) => {
+  if (!randomArr.length) return [];
+  if (randomArr.length < 2) return randomArr;
+  const heap = new MinHeap();
+  randomArr.forEach((item) => {
+    heap.add(item);
+  });
+  const _res = [];
+  while (heap.heapContainer.length) {
+    _res.push(heap.poll());
+  }
+  return _res;
+};
 
 export {
   MinHeap,

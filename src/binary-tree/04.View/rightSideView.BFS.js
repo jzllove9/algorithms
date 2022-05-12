@@ -1,4 +1,3 @@
-
 const BFS = (root) => {
   if (!root) return null;
   if (!root.left && !root.right) return root.value;
@@ -6,7 +5,6 @@ const BFS = (root) => {
   const queue = [root];
   let lg = 1;
   while (queue.length) {
-    let first = true;
     while (lg) {
       const node = queue.shift();
       if (lg === 1) result.push(node.value);
@@ -17,6 +15,6 @@ const BFS = (root) => {
     lg = queue.length;
   }
   return result;
-}
+};
 
 export default BFS;

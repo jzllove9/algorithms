@@ -1,4 +1,3 @@
-
 const BFS = (root) => {
   if (!root) return null;
   if (!root.left && !root.right) return root.value;
@@ -20,6 +19,6 @@ const BFS = (root) => {
     lg = queue.length;
   }
   return result;
-}
+};
 
 export default BFS;

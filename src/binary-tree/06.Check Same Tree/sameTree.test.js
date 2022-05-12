@@ -31,4 +31,4 @@ describe('#判断是否为相同二叉树', () => {
 
     expect(isSameTree(p, q)).eql(false);
   });
-})
+});

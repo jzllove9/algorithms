@@ -1,4 +1,3 @@
-
 const order = (root) => {
   if (!root) return [];
   let node = root;
@@ -19,8 +18,8 @@ const order = (root) => {
     } else {
       node = node.right;
     }
-  };
+  }
   return _result;
-}
+};
 
 export default order;

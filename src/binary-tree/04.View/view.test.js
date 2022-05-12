@@ -17,5 +17,4 @@ describe('#二叉树视图测试', () => {
   it('右视图', () => {
     expect(rightSideViewBFS(tree).join()).eql('1,3,5');
   });
-})
-
+});

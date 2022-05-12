@@ -1,4 +1,3 @@
-
 const BFS = (root) => {
   if (!root) return 0;
   const queue = [root];
@@ -11,9 +10,9 @@ const BFS = (root) => {
       if (_node.right) queue.push(_node.right);
     }
     queue.shift();
-    level++
+    level++;
   }
   return level;
-}
+};
 
 export default BFS;

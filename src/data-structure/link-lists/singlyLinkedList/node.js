@@ -7,7 +7,7 @@ export default class SinglyLinkedListNode {
     this.next = next;
   }
 
-  toString(){
+  toString() {
     return this.value.toString();
   }
 }

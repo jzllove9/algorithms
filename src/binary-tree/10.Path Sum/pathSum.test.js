@@ -32,4 +32,4 @@ describe('#路径和搜索', () => {
     expect(result2[1].join()).eql('5,8,9');
     expect(result2[2].join()).eql('5,8,4,5');
   });
-})
+});

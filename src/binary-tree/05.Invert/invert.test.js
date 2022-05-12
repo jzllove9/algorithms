@@ -2,7 +2,7 @@ import { expect } from 'chai';
 import TreeNode from '../../data-structure/binary-tree/node.js';
 import invert from './invert.js';
 
-describe("#反转二叉树", () => {
+describe('#反转二叉树', () => {
   const tree = new TreeNode(4);
 
   tree.left = new TreeNode(2);
@@ -40,5 +40,4 @@ describe("#反转二叉树", () => {
     expect(newTree2.right.left.value).eql(6);
     expect(newTree2.right.right.value).eql(9);
   });
-})
-
+});

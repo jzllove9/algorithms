@@ -6,21 +6,21 @@ import minDepthDFS from './minDepth.DFS.js';
 import minDepthBFS from './minDepth.BFS.js';
 
 const depthFuncMap = {
-  '最大深度': {
+  最大深度: {
     methods: [
       maxDepthDFS,
-      maxDepthBFS
+      maxDepthBFS,
     ],
-    result: 4
+    result: 4,
   },
-  '最小深度': {
+  最小深度: {
     methods: [
       minDepthDFS,
-      minDepthBFS
+      minDepthBFS,
     ],
-    result: 3
-  }
-}
+    result: 3,
+  },
+};
 
 describe('#二叉树最小深度', () => {
   //          1
@@ -37,14 +37,14 @@ describe('#二叉树最小深度', () => {
   tree.right.right = new TreeNode(3);
 
   const keys = Object.keys(depthFuncMap);
-  keys.forEach(key => {
+  keys.forEach((key) => {
     const funcs = depthFuncMap[key].methods;
-    const result = depthFuncMap[key].result;
+    const { result } = depthFuncMap[key];
 
     funcs.forEach((func, idx) => {
       it(`${key}测试-${idx === 0 ? 'DFS' : 'BFS'}`, () => {
         expect(func(tree)).eql(result);
       });
-    })
-  })
-})
+    });
+  });
+});

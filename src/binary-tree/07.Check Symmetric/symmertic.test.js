@@ -31,4 +31,4 @@ describe('#对称二叉树测试', () => {
 
     expect(symmertic(tree)).eql(true);
   });
-})
+});

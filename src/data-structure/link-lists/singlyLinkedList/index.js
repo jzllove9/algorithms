@@ -47,24 +47,24 @@ export default class SinglyLinkedList {
     if (!this.tail) return null;
     const _node = this.tail;
     if (this.head === this.tail) {
-      this.head = this.tail = null;
-      return _node;
-    } else {
-      let _preTailNode = this.head;
-      while (_preTailNode.next !== this.tail) {
-        _preTailNode = _preTailNode.next;
-      }
-      this.tail = _preTailNode;
-      this.tail.next = null;
+      this.head = null;
+      this.tail = null;
       return _node;
     }
+    let _preTailNode = this.head;
+    while (_preTailNode.next !== this.tail) {
+      _preTailNode = _preTailNode.next;
+    }
+    this.tail = _preTailNode;
+    this.tail.next = null;
+    return _node;
   }
 
   reverse() {
     if (!this.head) return null;
     const dummyNode = new SinglyLinkedListNode(null, this.head);
     let a = dummyNode;
-    let b = a.next; //this.head
+    let b = a.next; // this.head
     this.tail = b;
     let c = b.next;
     while (c !== null) {

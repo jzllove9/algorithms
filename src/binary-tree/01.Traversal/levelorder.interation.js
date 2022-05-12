@@ -1,4 +1,3 @@
-
 const order = (root) => {
   if (!root) return [];
   const queue = [root];
@@ -14,6 +13,6 @@ const order = (root) => {
     queue.shift();
   }
   return result;
-}
+};
 
 export default order;

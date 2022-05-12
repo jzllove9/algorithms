@@ -1,6 +1,6 @@
 export default class HashTable {
-  keys;
+  // keys;
   constructor() {
-    this.keys = {}
+    this.keys = {};
   }
 }

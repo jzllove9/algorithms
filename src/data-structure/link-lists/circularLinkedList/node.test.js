@@ -1,6 +1,5 @@
+import { expect } from 'chai';
 import CircularLinkedListNode from './node.js';
-import { expect } from 'chai'
-
 
 describe('#测试环链表node类', () => {
   it('使用值作为参数创建一个节点', () => {
@@ -44,5 +43,4 @@ describe('#测试环链表node类', () => {
     node.value = 'string value';
     expect(node.toString()).eql('string value');
   });
-})
-
+});

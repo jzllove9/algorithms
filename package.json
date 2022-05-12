@@ -5,13 +5,23 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "mocha": "mocha ./**/*.test.js"
+    "mocha": "mocha ./**/*.test.js",
+    "fix": "eslint --fix ./"
   },
   "type": "module",
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@babel/preset-env": "^7.16.11",
     "chai": "^4.3.6",
+    "eslint": "^7.32.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.26.0",
     "mocha": "^10.0.0"
+  },
+  "aljkProcode": {
+    "disabled": true,
+    "srcDirName": "",
+    "materialsDirName": ""
   }
 }

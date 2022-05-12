@@ -1,5 +1,5 @@
+import { expect } from 'chai';
 import DoublyLinkedListNode from './node.js';
-import { expect } from 'chai'
 
 describe('#测试双链表node类', () => {
   it('测试添加单一值', () => {
@@ -7,7 +7,7 @@ describe('#测试双链表node类', () => {
     expect(linkedList.value).to.eql(1);
     expect(linkedList.next).to.be.null;
     expect(linkedList.prev).to.be.null;
-  })
+  });
 
   it('连接三个节点', () => {
     const node1 = new DoublyLinkedListNode(1);
@@ -25,7 +25,6 @@ describe('#测试双链表node类', () => {
     expect(node3.prev).eql(node2);
     expect(node3.next).eql(node1);
     expect(node3.value).eql(3);
-
   });
 
   it('toString', () => {

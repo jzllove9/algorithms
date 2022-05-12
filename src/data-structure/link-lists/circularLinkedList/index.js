@@ -41,7 +41,7 @@ export default class CircularLinkedList {
     _node.prev = null;
     _node.next = null;
 
-    return _node
+    return _node;
   }
 
   push(value) {
@@ -68,7 +68,7 @@ export default class CircularLinkedList {
       this.head = null;
       this.tail = null;
     } else {
-      this.tail = _node.prev
+      this.tail = _node.prev;
       this.tail.next = this.head;
       this.head.prev = this.tail;
     }

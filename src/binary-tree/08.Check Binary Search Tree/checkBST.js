@@ -6,6 +6,6 @@ const checkBST = (root) => {
   const checkRight = checkBST(root.right);
   const checkCurrent = (root.left.value < root.value) && (root.value < root.right.value);
   return checkCurrent && checkLeft && checkRight;
-}
+};
 
 export default checkBST;

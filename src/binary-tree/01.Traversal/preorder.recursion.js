@@ -1,4 +1,3 @@
-
 const order = (root, arr = []) => {
   if (root) {
     arr.push(root.value);
@@ -6,6 +5,6 @@ const order = (root, arr = []) => {
     order(root.right, arr);
   }
   return arr;
-}
+};
 
 export default order;

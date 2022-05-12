@@ -7,8 +7,8 @@ const checkBanlanced = (root) => {
       return -1;
     }
     return Math.max(leftH, rightH) + 1;
-  }
+  };
   return func(root) >= 0;
-}
+};
 
 export default checkBanlanced;

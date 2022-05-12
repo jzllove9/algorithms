@@ -15,4 +15,4 @@ export default (randomArr) => {
     h = Math.floor(h / ratio);
   }
   return a;
-}
+};
