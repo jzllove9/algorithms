@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "mocha": "mocha ./**/*.test.js",
-    "fix": "eslint --fix ./"
+    "mocha": "mocha --recursive src/",
+    "fix": "eslint --fix ./src/"
   },
   "type": "module",
   "author": "",
