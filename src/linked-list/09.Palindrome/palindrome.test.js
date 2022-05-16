@@ -1,20 +1,23 @@
-// import { createFromArray } from '../utils';
-// import palindrome from './palindrome';
+import { expect } from 'chai';
+import { createFromArray } from '../utils.js';
+import palindrome from './palindrome.js';
 
-// /**
-//  * Input: head = 1->2
-//  * Output: false
-//  */
-// test('palindrome false', () => {
-//   const list = createFromArray([1, 2]);
-//   expect(palindrome(list)).toBe(false);
-// });
+describe('#单链表回文测试', () => {
+  /**
+   * Input: head = 1->2
+   * Output: false
+   */
+  it('不存在回文', () => {
+    const list = createFromArray([1, 2]);
+    expect(palindrome(list)).false;
+  });
 
-// /**
-//  * Input: head = 1->2->2->1
-//  * Output: true
-//  */
-// test('palindrome true', () => {
-//   const list = createFromArray([1, 2, 2, 1]);
-//   expect(palindrome(list)).toBe(true);
-// });
+  /**
+   * Input: head = 1->2->2->1
+   * Output: true
+   */
+  it('存在回文', () => {
+    const list = createFromArray([1, 2, 2, 1]);
+    expect(palindrome(list)).true;
+  });
+});

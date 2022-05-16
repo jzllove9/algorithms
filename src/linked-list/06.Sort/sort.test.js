@@ -1,22 +1,31 @@
-// import { toString, createFromArray } from '../utils';
-// import sort from './sort';
+import { expect } from 'chai';
+import { createFromArray } from '../utils.js';
+import sort from './sort.js';
 
-// /**
-//  * Input: head = 4->2->1->3
-//  * Output: head = 1->2->3->4
-//  */
-// test('sort', () => {
-//   const list = createFromArray([4, 2, 1, 3]);
-//   const newList = sort(list);
-//   expect(toString(newList)).toBe('1,2,3,4');
-// });
+describe('#单链表排序', () => {
+  /**
+   * Input: head = 4->2->1->3
+   * Output: head = 1->2->3->4
+   */
+  it('非空链表排序测试1', () => {
+    const list = createFromArray([4, 2, 1, 3]);
+    const newList = sort(list);
+    expect(newList.toString()).eql('1,2,3,4');
+  });
 
-// /**
-//  * Input: head = null
-//  * Output: head = null
-//  */
-// test('sort null', () => {
-//   const list = null;
-//   const newList = sort(list);
-//   expect(toString(newList)).toBe('');
-// });
+  it('非空链表排序测试2', () => {
+    const list = createFromArray([4, 0, 10, 5, 2, 1, 3]);
+    const newList = sort(list);
+    expect(newList.toString()).eql('0,1,2,3,4,5,10');
+  });
+
+  /**
+   * Input: head = null
+   * Output: head = null
+   */
+  it('空链表排序测试', () => {
+    const list = null;
+    const newList = sort(list);
+    expect(newList).null;
+  });
+});

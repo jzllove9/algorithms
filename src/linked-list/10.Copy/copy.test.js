@@ -1,26 +1,29 @@
-// import { toString } from '../utils';
-// import copy from './copy';
+import { expect } from 'chai';
+// import SinglyLinkedListNode from '../../data-structure/link-lists/singlyLinkedList/node.js';
+import copy from './copy.js';
 
-// class ListNode {
-//   constructor(val, next = null, random = null) {
-//     this.val = val;
-//     this.next = next;
-//     this.random = random;
-//   }
-// }
+class ListNode {
+  constructor(value, next = null, random = null) {
+    this.value = value;
+    this.next = next;
+    this.random = random;
+  }
+}
 
-// /**
-//  * Input: head = [1,1]->[2,null]->[3,2]
-//  * Output: (clone)
-//  */
-// test('copy', () => {
-//   const list = new ListNode(1);
-//   list.random = list;
-//   list.next = new ListNode(2);
-//   list.next.random = null;
-//   list.next.next = new ListNode(3);
-//   list.next.next.random = list.next;
+describe('#复制带有随机指针的单链表', () => {
+/**
+ * Input: head = [1,node(1)]->[2,null]->[3,node(2)]
+ * Output: (clone)
+ */
+  it('复制1', () => {
+    const list = new ListNode(1);
+    list.random = list;
+    list.next = new ListNode(2);
+    list.next.random = null;
+    list.next.next = new ListNode(3);
+    list.next.next.random = list.next;
 
-//   const newList = copy(list);
-//   expect(toString(newList)).toBe('1,2,3');
-// });
+    const newList = copy(list);
+    expect(newList.toString()).eql('1,2,3');
+  });
+});
