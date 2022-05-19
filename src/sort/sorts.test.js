@@ -6,7 +6,7 @@ import insetSort from './insertion-sorts/index.js';
 import quickSort from './quick-sorts/index.js';
 import mergeSort from './merge-sorts/index.js';
 import shellSort from './shell-sorts/index.js';
-import { heapSorts } from './heap-sorts/index.js';
+import heapSorts from './heap-sorts/index.js';
 
 const sorters = {
   冒泡排序: bubbleSort,
@@ -25,7 +25,7 @@ const equalArr = [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1];
 
 const befortSortArr = [...randomArr];
 
-describe('#排序测试：', () => {
+describe('#排序专项 -- 常见排序算法', () => {
   Object.keys(sorters).forEach((key) => {
     const sortFunc = sorters[key];
     it(`${key}测试`, () => {

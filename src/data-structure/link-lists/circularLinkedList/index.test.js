@@ -1,7 +1,7 @@
 import { expect } from 'chai';
 import CircularLinkedList from './index.js';
 
-describe('#测试环链表类', () => {
+describe('#数据结构专项：链表 -- 环链表类', () => {
   it('unshift', () => {
     const linkedList = new CircularLinkedList();
 

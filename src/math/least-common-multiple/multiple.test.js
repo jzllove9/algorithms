@@ -1,7 +1,7 @@
 import { expect } from 'chai';
 import lcm from './lcm.js';
 
-describe('#计算最小公倍数', () => {
+describe('#数学计算专项 -- 计算两数最小公倍数', () => {
   it('最小公倍数测试', () => {
     expect(lcm(0, 0)).eql(0);
     expect(lcm(1, 0)).eql(0);

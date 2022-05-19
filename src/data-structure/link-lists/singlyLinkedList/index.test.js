@@ -1,7 +1,7 @@
 import { expect } from 'chai';
 import SinglyLinkedList from './index.js';
 
-describe('#测试单链表类', () => {
+describe('#数据结构专项：链表 -- 单链表类', () => {
   it('push', () => {
     const linkedList = new SinglyLinkedList();
     expect(linkedList.head).to.be.null;

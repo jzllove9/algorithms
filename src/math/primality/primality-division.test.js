@@ -1,7 +1,7 @@
 import { expect } from 'chai';
 import primality from './primality-division.js';
 
-describe('#判断是否为素数', () => {
+describe('#数学计算专项 -- 判断是否为素数', () => {
   it('判断素数测试', () => {
     expect(primality(1)).false;
     expect(primality(2)).true;

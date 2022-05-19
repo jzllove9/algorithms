@@ -1,7 +1,7 @@
 import { expect } from 'chai';
 import DoublyLinkedList from './index.js';
 
-describe('#测试双链表类', () => {
+describe('#数据结构专项：链表 -- 双链表类', () => {
   it('unshift', () => {
     const linkedList = new DoublyLinkedList();
     expect(linkedList.toString()).eql('');

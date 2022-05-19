@@ -14,7 +14,7 @@ const isPowerOfThreeFuncs = {
   基准转换: isPowerOfThreeBase,
 };
 
-describe('#判断是否为3的幂数', () => {
+describe('#数学计算专项 -- 判断是否为3的幂数', () => {
   Object.keys(isPowerOfThreeFuncs).forEach((key) => {
     const isPowerOfThreeFunc = isPowerOfThreeFuncs[key];
     it(`${key}测试`, () => {

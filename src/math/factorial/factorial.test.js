@@ -2,7 +2,7 @@ import { expect } from 'chai';
 import factorialRecursive from './factorial-recursive.js';
 import factorialIteratiive from './factorial-iterative.js';
 
-describe('#计算阶乘', () => {
+describe('#数学计算专项 -- 计算阶乘', () => {
   it('迭代', () => {
     expect(factorialIteratiive(0)).eql(1);
     expect(factorialIteratiive(1)).eql(1);

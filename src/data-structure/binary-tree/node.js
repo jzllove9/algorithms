@@ -1,3 +1,6 @@
+/**
+ * 二叉树节点
+ */
 export default class BinaryTreeNode {
   constructor(value, left = null, right = null) {
     this.left = left;
