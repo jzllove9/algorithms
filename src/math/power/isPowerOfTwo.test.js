@@ -11,7 +11,7 @@ const isPowerOfTwoFuncs = {
   位运算: isPowerOfTwoBitwise,
 };
 
-describe('#判断是否为2的幂数', () => {
+describe('#数学计算专项 -- 判断是否为2的幂数', () => {
   Object.keys(isPowerOfTwoFuncs).forEach((key) => {
     const isPowerOfTwoFunc = isPowerOfTwoFuncs[key];
     it(`${key}测试`, () => {

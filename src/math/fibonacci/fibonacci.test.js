@@ -12,7 +12,7 @@ const fbiFuncs = {
   矩阵: fibonacciMatrix,
 };
 
-describe('#计算斐波那契数列：', () => {
+describe('#数学计算专项 -- 计算斐波那契数列：', () => {
   Object.keys(fbiFuncs).forEach((key) => {
     const sortFunc = fbiFuncs[key];
     it(`${key}测试`, () => {

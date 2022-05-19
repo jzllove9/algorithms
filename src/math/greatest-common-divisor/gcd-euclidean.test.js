@@ -8,7 +8,7 @@ const gcdFuncs = {
   迭代: gcdIterative,
 };
 
-describe('#计算最大公约数：', () => {
+describe('#数学计算专项 -- 计算两数最大公约数：', () => {
   Object.keys(gcdFuncs).forEach((key) => {
     const gcdFunc = gcdFuncs[key];
     it(`${key}测试`, () => {

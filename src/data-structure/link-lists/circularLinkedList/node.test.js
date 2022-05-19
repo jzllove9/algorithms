@@ -1,7 +1,7 @@
 import { expect } from 'chai';
 import CircularLinkedListNode from './node.js';
 
-describe('#测试环链表node类', () => {
+describe('#数据结构专项：链表 -- 环链表node类', () => {
   it('使用值作为参数创建一个节点', () => {
     const node = new CircularLinkedListNode(1);
 

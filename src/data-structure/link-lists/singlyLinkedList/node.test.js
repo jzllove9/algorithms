@@ -1,7 +1,7 @@
 import { expect } from 'chai';
 import SinglyLinkedListNode from './node.js';
 
-describe('#测试单链表node类', () => {
+describe('#数据结构专项：链表 -- 单链表node类', () => {
   it('测试添加单一值', () => {
     const linkedList = new SinglyLinkedListNode(1);
     expect(linkedList.value).to.eql(1);

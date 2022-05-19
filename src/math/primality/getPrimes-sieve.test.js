@@ -1,7 +1,7 @@
 import { expect } from 'chai';
 import getPrimes from './getPrimes-sieve.js';
 
-describe('#获取n以内素数', () => {
+describe('#数学计算专项 -- 获取n以内素数', () => {
   it('获取10以内素数素数测试', () => {
     const res = getPrimes(10);
     expect(res.length).eql(4);

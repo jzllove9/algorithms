@@ -1,7 +1,7 @@
 import { expect } from 'chai';
 import calcPower from './calc-power.js';
 
-describe('#计算幂数', () => {
+describe('#数学计算专项 -- 快速计算幂数', () => {
   it('计算幂数测试', () => {
     expect(calcPower(0, 0)).eql(0);
     expect(calcPower(1, 0)).eql(1);

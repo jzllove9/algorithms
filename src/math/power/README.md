@@ -1,6 +1,7 @@
 # 幂 (Power)
 
-
+## 计算快速幂
+[calc-power.js](calc-power.js)
 
 ## 判断 2 的幂次方
 
