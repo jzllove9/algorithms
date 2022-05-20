@@ -15,7 +15,7 @@ npm run test
 ```
 可以在控制台中看到每个算法的运行是否通过
 
-单元测试文件在每个对应知识点文件目录下的 .test 文件，如果需要进行额外测试可自行更改测试文件
+每个知识点文件下都存在对应的单元测试文件，格式为 **.test.js ，可自行更改单元测试文件进行验证
 
 ## 知识点目录
 
@@ -72,3 +72,18 @@ npm run test
   - [ ] 分治思想
   - [ ] 动态规划
   - [ ] 回溯算法
+
+---
+## 联系方式
+
+邮箱 – 781011352@qq.com
+
+LICENSE - MIT
+
+## 贡献
+1. Fork本项目
+2. 创建您的个人分支 (`git checkout -b yourname/feature`)
+3. 提交您的改动 (`git commit -am 'Yourname Add some feature'`)
+4. 将您的改动推送到远程分支 (`git push origin yourname/feature`)
+5. 创建Pull Request
+6. 期待您的加入！
