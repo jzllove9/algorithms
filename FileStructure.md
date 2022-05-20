@@ -12,13 +12,15 @@
 * `入门` [队列](src/data-structures/queue/README.md)
 * `入门` [栈](src/data-structures/stack/README.md)
 * `入门` [树](src/data-structures/tree/README.md)
-  * `入门` [二叉树](src/data-structures/binary-tree/README.md)
-  * `中等` [二叉搜索树](src/data-structures/binary-search-tree/README.md)
-  * `中等` [AVL树](src/data-structures/AVL/README.md)
-  * `困难` [红黑树](src/data-structures/red-black-tree/README.md)
+  * `入门` [二叉树](src/data-structures/tree/binary-tree/README.md)
+  * `中等` [二叉搜索树](src/data-structures/tree/binary-search-tree/README.md)
+  * `中等` [AVL树](src/data-structures/tree/AVL/README.md)
+  * `困难` [红黑树](src/data-structures/tree/red-black-tree/README.md)
 
 ## 算法
-算法（Algorithm）是指解题方案的准确而完整的描述，是一系列解决问题的清晰指令，算法代表着用系统的方法描述解决问题的策略机制。也就是说，能够对一定规范的输入，在有限时间内获得所要求的输出。如果一个算法有缺陷，或不适合于某个问题，执行这个算法将不会解决这个问题。不同的算法可能用不同的时间，空间或效率来完成同样的任务。一个算法的优劣可以用空间复杂度与时间复杂度来衡量。
+算法（Algorithm）是指解题方案的准确而完整的描述，是一系列解决问题的清晰指令，算法代表着用系统的方法描述解决问题的策略机制。
+
+不同的算法可能用不同的时间，空间或效率来完成同样的任务。一个算法的优劣可以用空间复杂度与时间复杂度来衡量。
 
 * **数学**
   * `入门` [阶乘](src/algorithms/math/factorial/README.md) -- 迭代和递归方式实现阶乘计算
@@ -35,5 +37,25 @@
   * `入门` [希尔排序](src/algorithms/math/shell-sorts/README.md)
   * `入门` [归并排序](src/algorithms/math/merge-sorts/README.md)
   * `入门` [快速排序](src/algorithms/math/quick-sorts/README.md)
-  * `入门` [堆排序](src/algorithms/math/heap-sorts/README.md) -- 小顶堆
+  * `入门` [堆排序](src/algorithms/math/heap-sorts/README.md)
+
+
+## 算法范式
+算法范式是对一系列算法的抽象和总结，面对同类型不同难度的算法问题时的统一思路和解法
+
+该部分将会举例一些 leetCode 中的经典题型对算法范式进行说明
+
+* **查找问题**
+  * TODO
+* **贪心算法**
+  * TODO
+* **分治思想**
+  * `入门` [快速计算幂](src/algorithms/math/power)
+  * `入门` [二叉树DFS](src/data-structures/tree/binary-tree/) -- 二叉树DFS
+  * `入门` [归并排序](src/algorithms/math/merge-sorts/README.md)
+  * `入门` [快速排序](src/algorithms/math/quick-sorts/README.md)
+* **动态规划**
+  * TODO
+* **回溯算法**
+  * TODO
 
