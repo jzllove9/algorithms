@@ -1,4 +1,4 @@
-import MiniHeap from '../../data-structure/heap/minHeap.js';
+import MiniHeap from '../../../data-structures/heap/minHeap.js';
 
 const heapSorts = (randomArr) => {
   if (!randomArr.length) return [];
