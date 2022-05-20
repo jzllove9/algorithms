@@ -1,12 +1,12 @@
 {
   "name": "algorithms-jzl",
   "version": "1.0.0",
-  "description": "",
+  "description": "基于javascript的算法与数据结构知识仓库",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "mocha": "mocha --recursive src/",
-    "fix": "eslint --fix ./src/"
+    "test": "mocha --recursive src/",
+    "lint": "eslint ./src/**",
+    "fix": "eslint --fix ./src/**"
   },
   "type": "module",
   "author": "",
