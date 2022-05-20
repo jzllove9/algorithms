@@ -72,3 +72,18 @@ npm run test
   - [ ] 分治思想
   - [ ] 动态规划
   - [ ] 回溯算法
+
+---
+## 联系方式
+
+邮箱 – 781011352@qq.com
+
+LICENSE - MIT
+
+## 贡献
+1. Fork本项目
+2. 创建您的个人分支 (`git checkout -b yourname/feature`)
+3. 提交您的改动 (`git commit -am 'Yourname Add some feature'`)
+4. 将您的改动推送到远程分支 (`git push origin yourname/feature`)
+5. 创建Pull Request
+6. 期待您的加入！
