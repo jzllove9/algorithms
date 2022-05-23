@@ -8,11 +8,33 @@
 * `入门` [堆](src/data-structures/heap/README.md)
   * `入门` [小顶堆](src/data-structures/heap/minHeap.js)
   * `入门` [大顶堆](src/data-structures/heap/miniHeap.js)
-* `入门` [链表](src/data-structures/linked-list/README.md)
+* `入门` [链表](src/data-structures/linked-lists/README.md)
+  * `入门` [单链表](src/data-structures/linked-lists/singlyLinkedList/)
+    * `入门` [回文检测](src/data-structures/linked-lists/singlyLinkedList/check-nodes-palindrome/)
+    * `入门` [复制包含随机节点指针的单链表](src/data-structures/linked-lists/singlyLinkedList/copy-linked-with-random-arrow/)
+    * `入门` [环形链表检测 & 查找环入口](src/data-structures/linked-lists/singlyLinkedList/find-cycle-entry/)
+    * `入门` [查找链表中间节点](src/data-structures/linked-lists/singlyLinkedList/find-middle-nodes/)
+    * `入门` [查找两个单链表交叉点](src/data-structures/linked-lists/singlyLinkedList/nodes-intersection/)
+    * `入门` [小于N的值前置](src/data-structures/linked-lists/singlyLinkedList/nodes-partition/)
+    * `入门` [排序](src/data-structures/linked-lists/singlyLinkedList/nodes-sorts/)
+    * `入门` [尾部索引删除](src/data-structures/linked-lists/singlyLinkedList/remove-from-end/)
+    * `入门` [反转区域内链表](src/data-structures/linked-lists/singlyLinkedList/reverse-range-nodes/)
+    * `入门` [交换相邻节点](src/data-structures/linked-lists/singlyLinkedList/swap-neared-nodes/)
+  * `入门` [双链表](src/data-structures/linked-lists/doublyLinkedList/)
+  * `入门` [环形链表](src/data-structures/linked-lists/circularLinkedList/)
 * `入门` [队列](src/data-structures/queue/README.md)
 * `入门` [栈](src/data-structures/stack/README.md)
 * `入门` [树](src/data-structures/tree/README.md)
   * `入门` [二叉树](src/data-structures/tree/binary-tree/README.md)
+    * `入门` [二叉树DFS合集](src/data-structures/tree/binary-tree/traversal) -- 前中后遍历，迭代+递归两种实现方式
+    * `入门` [根据遍历结果构造二叉树](src/data-structures/tree/binary-tree/construct-by-traversal) -- 根据前序&中序，后序&中序遍历结果构造二叉树
+    * `入门` [获取树最大/最小深度](src/data-structures/tree/binary-tree/depth) -- DFS + BFS
+    * `入门` [翻转二叉树](src/data-structures/tree/binary-tree/invert)
+    * `入门` [查找目标节点路径和](src/data-structures/tree/binary-tree/find-path-Sum) -- 可能存在多结果
+    * `入门` [检测高度平衡](src/data-structures/tree/binary-tree/check-height-balanced)
+    * `入门` [检测相同树](src/data-structures/tree/binary-tree/check-same-tree)
+    * `入门` [检测对称树](src/data-structures/tree/binary-tree/check-symmetric)
+    * `入门` [检测二叉搜索树](src/data-structures/tree/binary-tree/checkBST)
   * `中等` [二叉搜索树](src/data-structures/tree/binary-search-tree/README.md)
   * `中等` [AVL树](src/data-structures/tree/AVL/README.md)
   * `困难` [红黑树](src/data-structures/tree/red-black-tree/README.md)
@@ -51,11 +73,11 @@
   * TODO
 * **分治思想**
   * `入门` [快速计算幂](src/algorithms/math/power)
-  * `入门` [二叉树DFS](src/data-structures/tree/binary-tree/) -- 二叉树DFS
+  * `入门` [二叉树DFS合集](src/data-structures/tree/binary-tree/traversal)
   * `入门` [归并排序](src/algorithms/math/merge-sorts/README.md)
   * `入门` [快速排序](src/algorithms/math/quick-sorts/README.md)
 * **动态规划**
-  * TODO
+  * `入门` [斐波那契数列](src/algorithms/math/factorial/README.md) -- 递归求解法
 * **回溯算法**
-  * TODO
+  * `入门` [N皇后问题](src/algorithms/backtracking/n-queens/)
 
