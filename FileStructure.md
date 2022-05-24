@@ -78,6 +78,8 @@
   * `入门` [快速排序](src/algorithms/math/quick-sorts/README.md)
 * **动态规划**
   * `入门` [斐波那契数列](src/algorithms/math/factorial/README.md) -- 递归求解法
+  * `入门` [01背包问题](src/algorithms/dynamic-programming/knapsack-problem/zero-one-knapsack-problem/) -- 实现和优化
+  * `入门` [完全背包问题](src/algorithms/dynamic-programming/knapsack-problem/unbounded-knapsack-problem/) -- 实现和优化
 * **回溯算法**
   * `入门` [N皇后问题](src/algorithms/backtracking/n-queens/)
 

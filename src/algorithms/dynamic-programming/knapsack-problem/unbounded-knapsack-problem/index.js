@@ -44,7 +44,20 @@ const unBoundedKnapsackProblem = (V, N) => {
 
 /**
  * 优化，三重循环复杂度过高
- * TODO 注释推导过程
+ * dp公式推导过程：由第一种解法可知
+ * 等式 1: dp[i][j] =
+ *                        max(dp[i - 1][j], dp[i - 1][j - v] + w, dp[i - 1][j - 2v] + 2w,
+ *                            ... ,dp[i - 1][j - k*v] + k*w);
+ * 同时缩小缩小背包体积可得
+ * 等式 2: dp[i][j - v] =
+ *                        max(dp[i - 1][j - v], dp[i - 1][j - 2v] + w, dp[i - 1][j - 3v] + 2w,
+ *                            ... ,dp[i - 1][j - k*v] + (k - 1)*w);
+ * 等式 2 两边同时 + w, 可得：
+ * 等式 3: dp[i][j - v] + w =
+ *                        max(dp[i - 1][j - v ] + w, dp[i - 1][j - 2v] + 2w, dp[i - 1][j - 3v] + 3w,
+ *                            ... ,dp[i - 1][j - k*v] + k*w);
+ * 可发现等式 3 右侧部分，可以替换等式 1 中部分内容
+ * 将等式 3 带入等式 1,可得 dp[i][j] = max(dp[i - 1][j], dp[i][j - v] + w)
  * @param {*} V
  * @param {*} N
  */
