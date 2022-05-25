@@ -28,7 +28,7 @@ const checkSafe = (row, col, hasQueen) => {
  * @param {*} rowIndex
  */
 const backtrack = (board, hasQueen, n, rowIndex, result = []) => {
-  // 当达到行数上界（rowIndex < n），说明已经摆放结束所有皇后，返回本次 DFS 结果
+  // 当达到行数上界（rowIndex < n），说明已经摆放结束所有皇后，返回本次结果
   if (rowIndex === n) {
     // 此处需要深度复制数组，也可以用 arr = JSON.parse(JSON.stringfy(board));
     const arr = cloneDeep(board);
