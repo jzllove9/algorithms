@@ -52,6 +52,9 @@
   * `入门` [幂数](src/algorithms/math/power/README.md) -- 包含分治思想快速求幂，以及2，3幂数的判断
   * `入门` [素数](src/algorithms/math/primality/README.md) -- 迭代实现试除法，埃拉托斯特尼筛法求解n以内素数
 
+* **集合**
+  * `入门` [最大公共子序列](src/algorithms/dynamic-programming/longest-common-subquence) -- LCS
+
 * **排序**
   * `入门` [冒泡排序](src/algorithms/sort/bubble-sorts/README.md)
   * `入门` [选择排序](src/algorithms/math/selection-sorts/README.md)
@@ -61,14 +64,20 @@
   * `入门` [快速排序](src/algorithms/math/quick-sorts/README.md)
   * `入门` [堆排序](src/algorithms/math/heap-sorts/README.md)
 
+* **未分类**
+  * `入门` [递归楼梯问题](src/algorithms/uncategorized/staircase/)
+    * `入门` [暴力递归](src/algorithms/uncategorized/staircase/staircase-BF/)
+    * `入门` [自底向上迭代](src/algorithms/uncategorized/staircase/staircase-IT/)
+    * `入门` [动态规划](src/algorithms/uncategorized/staircase/staircase-DP/)
+    * `入门` [记忆剪枝](src/algorithms/uncategorized/staircase/staircase-MEM/)
 
 ## 算法范式
 算法范式是对一系列算法的抽象和总结，面对同类型不同难度的算法问题时的统一思路和解法
 
 该部分将会举例一些 leetCode 中的经典题型对算法范式进行说明
 
-* **查找问题**
-  * TODO
+* **暴力查找**
+  * `入门` [递归楼梯](src/algorithms/uncategorized/staircase/staircase-BF/) -- 爬楼梯问题的暴力迭代解法
 * **贪心算法**
   * TODO
 * **分治思想**
@@ -80,6 +89,8 @@
   * `入门` [斐波那契数列](src/algorithms/math/factorial/README.md) -- 递归求解法
   * `入门` [01背包问题](src/algorithms/dynamic-programming/knapsack-problem/zero-one-knapsack-problem/) -- 实现和优化
   * `入门` [完全背包问题](src/algorithms/dynamic-programming/knapsack-problem/unbounded-knapsack-problem/) -- 实现和优化
+  * `入门` [递归楼梯](src/algorithms/uncategorized/staircase/staircase-DP/) -- 爬楼梯问题的动态规划解法
+  * `入门` [最大公共子序列](src/algorithms/dynamic-programming/longest-common-subquence) -- LCS
 * **回溯算法**
   * `入门` [N皇后问题](src/algorithms/backtracking/n-queens/)
 

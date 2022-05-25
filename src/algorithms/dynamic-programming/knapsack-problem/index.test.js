@@ -1,4 +1,3 @@
-// import { expect } from 'chai';
 import { expect } from 'chai';
 import {
   zeroKnapsackProblem,
@@ -28,7 +27,7 @@ const N2 = [
   { v: 4, w: 30 },
 ];
 
-describe('#算法范式：动态规划 -- 0/1背包问题', () => {
+describe('#算法范式专项：动态规划 -- 0/1背包问题', () => {
   it('01背包问题测试', () => {
     let result;
     result = zeroKnapsackProblem(V, N);
@@ -48,7 +47,7 @@ describe('#算法范式：动态规划 -- 0/1背包问题', () => {
   });
 });
 
-describe('#算法范式：动态规划 -- 完全背包问题', () => {
+describe('#算法范式专项：动态规划 -- 完全背包问题', () => {
   it('完全背包问题测试', () => {
     let result;
     result = unBoundedKnapsackProblem(V, N);
