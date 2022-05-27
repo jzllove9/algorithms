@@ -36,6 +36,7 @@ const backtrack = (board, hasQueen, n, rowIndex, result = []) => {
     return;
   }
 
+  // 自上至下进行回溯
   for (let colIndex = 0; colIndex < n; colIndex++) {
     if (checkSafe(rowIndex, colIndex, hasQueen)) {
       hasQueen[rowIndex] = colIndex;
