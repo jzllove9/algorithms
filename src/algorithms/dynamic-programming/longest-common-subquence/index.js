@@ -30,9 +30,6 @@ const longestCommonSubquence = (arr1, arr2) => {
    * 所以若当前两个字符串相等，则向左上角移动
    * 否则向左或者上中和当前值相同的方向移动，因为当前 dp 的值正是由它们进一步推导过来的
    */
-
-  // const arr1 = [1, 3, 4, 6];
-  // const arr2 = [1, 3, 5, 4, 6];
   while (dp[colIndex][rowIndex] !== 0) {
     // 左上移动, -1 原因同上
     if (arr1[colIndex - 1] === arr2[rowIndex - 1]) {
