@@ -32,7 +32,7 @@ const unBoundedKnapsackProblem = (V, N) => {
 
   for (let i = 1; i < N.length; i++) {
     for (let j = 1; j <= V; j++) {
-      // 由于物品可以重复放入，所以需要判断放入多个时候是否存在更大价值
+      // 由于物品可以重复放入，所以需要判断当前物品放入多个时候是否存在更大价值
       for (let k = 0; k * N[i].v <= j; k++) {
         dp[i][j] = Math.max(dp[i][j], dp[i - 1][j - k * N[i].v] + k * N[i].w);
       }
@@ -68,8 +68,7 @@ const unBoundedKnapsackProblem2 = (V, N) => {
   }
 
   for (let i = 1; i < N.length; i++) {
-    // 注意倒序防止物品被重复放入，因为我们通过 i - 1 推断 i 的内容，如果下一次循环为正向则代表物品被重复放入
-    // 而反向遍历可以避免这种问题
+    // 注意正序表示物品可被重复放入
     for (let j = N[i].v; j <= V; j++) {
       dp[j] = Math.max(dp[j], dp[j - N[i].v] + N[i].w);
     }
