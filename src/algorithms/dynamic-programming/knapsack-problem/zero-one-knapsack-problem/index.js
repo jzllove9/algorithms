@@ -58,7 +58,8 @@ const zeroKnapsackProblem2 = (V, N) => {
   for (let j = N[0].v; j <= V; j++) {
     dp[j] = N[0].w;
   }
-
+  // 注意倒序防止物品被重复放入，因为我们通过 i - 1 推断 i 的内容，如果下一次循环为正向则代表物品被重复放入
+  // 而反向遍历可以避免这种问题
   for (let i = 1; i < N.length; i++) {
     for (let j = V; j >= N[i].v; j--) {
       dp[j] = Math.max(dp[j], dp[j - N[i].v] + N[i].w);

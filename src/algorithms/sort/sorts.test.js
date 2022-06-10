@@ -13,8 +13,8 @@ const sorters = {
   选择排序: selectionSort,
   插入排序: insetSort,
   希尔排序: shellSort,
-  快速排序: quickSort,
   归并排序: mergeSort,
+  快速排序: quickSort,
   堆排序: heapSorts,
 };
 
