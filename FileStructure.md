@@ -73,6 +73,9 @@
     * `入门` [自底向上迭代](src/algorithms/uncategorized/staircase/staircase-IT/)
     * `入门` [动态规划](src/algorithms/uncategorized/staircase/staircase-DP/)
     * `入门` [记忆剪枝](src/algorithms/uncategorized/staircase/staircase-MEM/)
+  * `入门` [接雨水问题](src/algorithms/uncategorized/trappingRain/)
+    * `入门` [暴力迭代](src/algorithms/uncategorized/trappingRain/trappingRain-BF/)
+    * `入门` [动态规划](src/algorithms/uncategorized/trappingRain/trappingRain-DP/)
 
 ## 算法范式
 算法范式是对一系列算法的抽象和总结，面对同类型不同难度的算法问题时的统一思路和解法
@@ -81,6 +84,7 @@
 
 * **暴力查找**
   * `入门` [递归楼梯](src/algorithms/uncategorized/staircase/staircase-BF/) -- 爬楼梯问题的暴力迭代解法
+  * `入门` [接雨水问题](src/algorithms/uncategorized/trappingRain/trappingRain-BF/) -- 接雨水问题解法
 * **贪心算法**
   * TODO
 * **分治思想**
@@ -94,6 +98,7 @@
   * `入门` [完全背包问题](src/algorithms/dynamic-programming/knapsack-problem/unbounded-knapsack-problem/) -- 实现和优化
   * `入门` [递归楼梯](src/algorithms/uncategorized/staircase/staircase-DP/) -- 爬楼梯问题的动态规划解法
   * `入门` [最大公共子序列](src/algorithms/dynamic-programming/longest-common-subquence) -- LCS
+  * `入门` [接雨水问题](src/algorithms/uncategorized/trappingRain/trappingRain-DP/) -- 接雨水问题动态规划解法
 * **回溯算法**
   * `入门` [N皇后问题](src/algorithms/backtracking/n-queens/)
 

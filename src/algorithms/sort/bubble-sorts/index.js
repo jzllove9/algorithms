@@ -2,7 +2,7 @@ export default (randomArr) => {
   if (!randomArr.length) return [];
   if (randomArr.length < 2) return randomArr;
   const _copyArr = [...randomArr];
-  // 长度-1是因为最后一位没有必要排序
+  // 长度-1是因为内部循环会处理最数组后一位的排序
   for (let i = 0; i < _copyArr.length - 1; i++) {
     // 优化冒泡排序，如果一趟遍历结束未发生任何交换，那么直接跳出外层循环
     let sorted = false;
