@@ -6,7 +6,7 @@ const copy = (head) => {
   let current = head;
   while (current) {
     const copyCurrent = new SinglyLinkedListNode(current.value, current.next);
-    if (copyCurrent.random) {
+    if (current.random) {
       copyCurrent.random = current.random.next;
     } else {
       copyCurrent.random = current.random;
