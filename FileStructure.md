@@ -7,6 +7,7 @@
 数据结构（Data structure）是计算机存储、组织数据的方式。数据结构是指相互之间存在一种或多种特定关系的数据素的集合。通常情况下，精心选择的数据结构可以带来更高的运行或者存储效率。
 
 * `入门` [数组](src/data-structures/array/README.md)
+  * `入门` [查找数组缺少的最小正整数](src/data-structures/array/findMinMissNumber/)
 * `入门` [哈希表](src/data-structures/hash-table/README.md)
 * `入门` [堆](src/data-structures/heap/README.md)
   * `入门` [小顶堆](src/data-structures/heap/minHeap.js)
