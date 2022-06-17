@@ -9,6 +9,8 @@ import postorderInteration from './postorder.interation.js';
 import postorderRecursion from './postorder.recursion.js';
 import levelorderInteration from './levelorder.interation.js';
 import levelorderRecursion from './levelorder.recursion.js';
+import zTraversalInteration from './z-traversal.interation.js';
+import zTraversalRecursion from './z-traversal.recursion.js';
 
 const orderMaps = {
   前序遍历: {
@@ -38,6 +40,13 @@ const orderMaps = {
       levelorderRecursion,
     ],
     result: '1,2,3,4',
+  },
+  Z字遍历: {
+    methods: [
+      zTraversalInteration,
+      zTraversalRecursion,
+    ],
+    result: '1,3,2,4',
   },
 };
 

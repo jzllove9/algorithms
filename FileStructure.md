@@ -7,7 +7,9 @@
 数据结构（Data structure）是计算机存储、组织数据的方式。数据结构是指相互之间存在一种或多种特定关系的数据素的集合。通常情况下，精心选择的数据结构可以带来更高的运行或者存储效率。
 
 * `入门` [数组](src/data-structures/array/README.md)
+  * `入门` [数组二分查找](src/data-structures/array/binarySearch)
   * `入门` [查找数组缺少的最小正整数](src/data-structures/array/findMinMissNumber/)
+  * `入门` [查找数组第k大的数](src/data-structures/array/findKthLargestNumber/)
 * `入门` [哈希表](src/data-structures/hash-table/README.md)
 * `入门` [堆](src/data-structures/heap/README.md)
   * `入门` [小顶堆](src/data-structures/heap/minHeap.js)
@@ -23,17 +25,20 @@
     * `入门` [排序](src/data-structures/linked-lists/singlyLinkedList/nodes-sorts/)
     * `入门` [尾部索引删除](src/data-structures/linked-lists/singlyLinkedList/remove-from-end/)
     * `入门` [反转区域内链表](src/data-structures/linked-lists/singlyLinkedList/reverse-range-nodes/)
+    * `入门` [反转每k为一组链表](src/data-structures/linked-lists/singlyLinkedList/reverse-k-range/)
     * `入门` [交换相邻节点](src/data-structures/linked-lists/singlyLinkedList/swap-neared-nodes/)
   * `入门` [双链表](src/data-structures/linked-lists/doublyLinkedList/)
   * `入门` [环形链表](src/data-structures/linked-lists/circularLinkedList/)
 * `入门` [队列](src/data-structures/queue/README.md)
 * `入门` [栈](src/data-structures/stack/README.md)
+* `入门` [字符串](src/data-structures/string/)
+  * `入门` [查找无重复字符最大子串](src/data-structures/string/noRepeatLongestString) 
 * `入门` [树](src/data-structures/tree/README.md)
   * `入门` [二叉树](src/data-structures/tree/binary-tree/README.md)
-    * `入门` [二叉树DFS合集](src/data-structures/tree/binary-tree/traversal) -- 前中后遍历，迭代+递归两种实现方式
+    * `入门` [二叉树DFS合集](src/data-structures/tree/binary-tree/traversal) -- 包含前中后，层级，z字形遍历，迭代+递归两种实现方式
     * `入门` [根据遍历结果构造二叉树](src/data-structures/tree/binary-tree/construct-by-traversal) -- 根据前序&中序，后序&中序遍历结果构造二叉树
     * `入门` [获取树最大/最小深度](src/data-structures/tree/binary-tree/depth) -- DFS + BFS
-    * `入门` [翻转二叉树](src/data-structures/tree/binary-tree/invert)
+    * `入门` [翻转区间二叉树](src/data-structures/tree/binary-tree/invert)
     * `入门` [查找目标节点路径和](src/data-structures/tree/binary-tree/find-path-Sum) -- 可能存在多结果
     * `入门` [检测高度平衡](src/data-structures/tree/binary-tree/check-height-balanced)
     * `入门` [检测相同树](src/data-structures/tree/binary-tree/check-same-tree)
@@ -77,6 +82,10 @@
   * `入门` [接雨水问题](src/algorithms/uncategorized/trappingRain/)
     * `入门` [暴力迭代](src/algorithms/uncategorized/trappingRain/trappingRain-BF/)
     * `入门` [动态规划](src/algorithms/uncategorized/trappingRain/trappingRain-DP/)
+  * `入门` [股票买卖问题](src/algorithms/uncategorized/buyShares/)
+    * `入门` [股票限制一次交易买卖问题暴力解法](src/algorithms/uncategorized/buyShares/buySharesOnce/buySharesOnce-BF/)
+    * `入门` [股票限制一次交易买卖问题动态规划解法](src/algorithms/uncategorized/buyShares/buySharesOnce/buySharesOnce-DP/)
+    * `入门` [股票不限制交易次数买卖问题动态规划解法](src/algorithms/uncategorized/buyShares/buySharesUnlimited/buySharesUnlimited-DP/)
 
 ## 算法范式
 算法范式是对一系列算法的抽象和总结，面对同类型不同难度的算法问题时的统一思路和解法
@@ -86,13 +95,18 @@
 * **暴力查找**
   * `入门` [递归楼梯](src/algorithms/uncategorized/staircase/staircase-BF/) -- 爬楼梯问题的暴力迭代解法
   * `入门` [接雨水问题](src/algorithms/uncategorized/trappingRain/trappingRain-BF/) -- 接雨水问题解法
+  * `入门` [股票限制一次交易买卖问题](src/algorithms/uncategorized/buyShares/buySharesOnce/buySharesOnce-BF/)
 * **贪心算法**
   * TODO
+* **滑动窗口**
+  * `入门` [查找无重复字符最大子串](src/data-structures/string/noRepeatLongestString) 
 * **分治思想**
   * `入门` [快速计算幂](src/algorithms/math/power)
   * `入门` [二叉树DFS合集](src/data-structures/tree/binary-tree/traversal)
   * `入门` [归并排序](src/algorithms/math/merge-sorts/README.md)
   * `入门` [快速排序](src/algorithms/math/quick-sorts/README.md)
+  * `入门` [数组二分查找](src/data-structures/array/binarySearch)
+  * `入门` [查找数组第k大的数](src/data-structures/array/findKthLargestNumber/)
 * **动态规划**
   * `入门` [斐波那契数列](src/algorithms/math/factorial/README.md) -- 递归求解法
   * `入门` [01背包问题](src/algorithms/dynamic-programming/knapsack-problem/zero-one-knapsack-problem/) -- 实现和优化
@@ -100,6 +114,8 @@
   * `入门` [递归楼梯](src/algorithms/uncategorized/staircase/staircase-DP/) -- 爬楼梯问题的动态规划解法
   * `入门` [最大公共子序列](src/algorithms/dynamic-programming/longest-common-subquence) -- LCS
   * `入门` [接雨水问题](src/algorithms/uncategorized/trappingRain/trappingRain-DP/) -- 接雨水问题动态规划解法
+  * `入门` [股票限制一次交易买卖问题](src/algorithms/uncategorized/buyShares/buySharesOnce/buySharesOnce-DP/)
+  * `入门` [股票不限制交易次数买卖问题](src/algorithms/uncategorized/buyShares/buySharesUnlimited/buySharesUnlimited-DP/)
 * **回溯算法**
   * `入门` [N皇后问题](src/algorithms/backtracking/n-queens/)
 
